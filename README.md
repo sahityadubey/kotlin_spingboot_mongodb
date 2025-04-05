@@ -1,2 +1,2 @@
-# kotlin_spingboot_mongodn
-Rest API Kotlin-  Sprint boot -Mongo DB
+# kotlin_spingboot_mongodb
+Rest API Kotlin - Sprint boot - Mongo DB
