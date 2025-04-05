@@ -1,0 +1,212 @@
+{
+	"info": {
+		"_postman_id": "1c7bab97-9ef6-4f2a-8c95-6e5d73cbb7dc",
+		"name": "KotlinSprintBootMongoDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4065783"
+	},
+	"item": [
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2N2YxOGU3YWNiNTk5OTRjOWM4Yjk3MzAiLCJ0eXBlIjoiYWNjZXNzIiwiaWF0IjoxNzQzODgzOTA3LCJleHAiOjE3NDM4ODQ4MDd9.XqTB-sALbw4HJTzp5G9G-2rP5Ld6dbmdrzxq6VAYGbw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"First\",\r\n    \"content\": \"First Note\",\r\n    \"color\": 123\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/notes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Refresh Token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2N2YxOGU3YWNiNTk5OTRjOWM4Yjk3MzAiLCJ0eXBlIjoiYWNjZXNzIiwiaWF0IjoxNzQzODgzOTA3LCJleHAiOjE3NDM4ODQ4MDd9.XqTB-sALbw4HJTzp5G9G-2rP5Ld6dbmdrzxq6VAYGbw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"refreshToken\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2N2YxOGU3YWNiNTk5OTRjOWM4Yjk3MzAiLCJ0eXBlIjoicmVmcmVzaCIsImlhdCI6MTc0Mzg4NDI2NCwiZXhwIjoxNzQ2NDc2MjY0fQ.Kpp6rIa49vzjq_GJ84Uxwt5J5uVr-oXo0jI1gJ0qALQ\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/auth/refresh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"auth",
+						"refresh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2N2YxOGU3YWNiNTk5OTRjOWM4Yjk3MzAiLCJ0eXBlIjoiYWNjZXNzIiwiaWF0IjoxNzQzODgzOTA3LCJleHAiOjE3NDM4ODQ4MDd9.XqTB-sALbw4HJTzp5G9G-2rP5Ld6dbmdrzxq6VAYGbw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/notes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2N2YxOGU3YWNiNTk5OTRjOWM4Yjk3MzAiLCJ0eXBlIjoiYWNjZXNzIiwiaWF0IjoxNzQzODgzOTA3LCJleHAiOjE3NDM4ODQ4MDd9.XqTB-sALbw4HJTzp5G9G-2rP5Ld6dbmdrzxq6VAYGbw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"First\",\r\n    \"content\": \"First Note\",\r\n    \"color\": 123\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/notes/67f0518d7c4450316a1dc56c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"notes",
+						"67f0518d7c4450316a1dc56c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"test@test3.com\",\r\n    \"password\": \"Test@1243r43r43\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"test@test3.com\",\r\n    \"password\": \"Test@1243r43r43\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
